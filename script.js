@@ -27,7 +27,7 @@ function getArticleId(comments) {
   return data.postId;
 }
 // articles need to be downloaded first before adding event listeners to
-const posts = await downloadPosts(5);
+const posts = await downloadPosts();
 console.log(posts);
 let main = document.querySelector("main");
 for (let post of posts) {
